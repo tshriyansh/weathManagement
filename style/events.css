@@ -1,0 +1,121 @@
+
+  @import url('https://fonts.googleapis.com/css2?family=Outfit&display=swap');
+
+  :root {
+    --Blue: #181c32;
+    --LightBlue: #202a58;
+    --Yello: rgb(255, 255, 192);
+}
+  
+  body {
+    
+    font-family: 'Outfit', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f7f7f7;
+  }
+
+  .events-container {
+    
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 40px;
+    text-align: center;
+  }
+
+  .event {
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 20px;
+    /* border-color: #252B48;
+    border: solid; */
+    margin-bottom: 20px;
+    /* box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.1); */
+    position: relative;
+    overflow: hidden;
+
+    box-shadow: 0px 5px 10px 2px var(--Blue);
+  }
+
+  .event-image {
+    width: 200px;
+    height: 150px;
+    transition: transform 0.3s;
+  }
+
+  .event:hover .event-image {
+    transform: scale(1.1);
+  }
+
+  .event-date {
+    font-size: 20px;
+    font-weight: bold;
+    color: #252B48;
+  }
+
+  .event-title {
+    font-size: 24px;
+    color: #252B48;
+    margin-top: 10px;
+  }
+
+  .event-description {
+    font-size: 16px;
+    color: #445069;
+    margin-top: 10px;
+  }
+
+  .upcoming-events {
+  
+    color: var(--Blue);
+    /* Border: 2px solid var(--Blue); */
+    width: 100%;
+    justify-content: center ;
+    height: 50px;
+    font-size: 30px;
+    font-weight: bold;
+    border-radius: 10px;
+    padding-top: 5px;
+
+    box-shadow: 0px 5px 10px 2px var(--Blue);
+
+  }
+
+  /* ... Previous CSS styles ... */
+
+/* h1.upcoming-events,
+h1.past-events {
+  color: #252B48;
+  background-color:rgb(177, 224, 222);
+  width: 100%;
+  height: 50px;
+  font-size: 30px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  position: relative;
+  display: inline-block;
+  transition: color 0.3s;
+} */
+
+h1.upcoming-events::before,
+h1.past-events::before {
+  content: "";
+  position: absolute;
+  bottom: -5px;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background-color: #252B48;
+  transition: width 0.3s;
+}
+
+h1.upcoming-events:hover,
+h1.past-events:hover {
+  color: #445069;
+}
+
+h1.upcoming-events:hover::before,
+h1.past-events:hover::before {
+  width: 100%;
+}
+

@@ -1,0 +1,611 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit&display=swap');
+
+body {
+    font-family: 'Outfit', sans-serif;
+
+}
+
+:root {
+    --Blue: #181c32;
+    --LightBlue: #202a58;
+    --Yello: rgb(255, 255, 192);
+}
+
+
+/* Rahul Navbar ----------------------------------- */
+
+
+.rahul .navbar {
+    background-color: var(--Blue) !important;
+}
+
+.rahul .navbar .d-flex {
+    margin-right: 15px;
+}
+
+.rahul .nav-link {
+    color: white !important;
+}
+
+.rahul .nav-link:hover {
+    transform: scale(1.1);
+    color: var(--Yello) !important;
+}
+
+.container, .container-fluid, .container-lg, .container-md, .container-sm, .container-xl, .container-xxl {
+  --bs-gutter-x: 1.5rem;
+  --bs-gutter-y: 0;
+  width: 60%;
+  padding-left: calc(var(--bs-gutter-x) * .5);
+  /* margin-right: auto;
+  margin-left: auto; */
+  
+}
+
+
+/* SLiders --------------------------------------- */
+.rahulCarousel .carouselExampleCaptions {
+    height: 300px !important;
+}
+
+.rahulCarousel .carousel .carousel-item {
+    height: 400px;
+}
+
+.rahulCarousel .carousel-item img {
+    position: absolute;
+    object-fit: fill;
+    top: 0;
+    left: 0;
+    min-height: 500px;
+}
+
+.bgTrans {
+    background-color: var(--Blue);
+    opacity: 0.7;
+    border-radius: 5px;
+}
+
+
+
+/* shriyansh css --------------------------------------- */
+
+
+.shriContainer {
+
+    left: 0;
+
+    top: 0;
+
+}
+
+/* body{
+
+    background-color: rgb(246, 240, 229);
+
+} */
+
+.shriContainer .main-m {
+
+    /* border: 2px solid black; */
+
+    height: 100vh;
+
+    align-items: center;
+
+    background-color: var(--LightBlue);
+
+
+
+}
+
+#main-m-h1 {
+
+    background-color: var(--Blue);
+    color: white;
+    padding: 10px 0px 10px 1em;
+
+}
+
+.shriContainer .containers {
+
+    /* border: 2px solid blue; */
+
+    height: 70vh;
+
+    width: auto;
+
+    display: flex;
+
+    flex-direction: row;
+
+    justify-content: space-around;
+
+    margin-top: 2rem;
+
+}
+
+.shriContainer .intro {
+
+    display: flex;
+
+    flex-direction: column;
+
+    /* border: 2px solid red; */
+
+    display: flex;
+
+    /* height: 20em; */
+
+    height: auto;
+
+    width: 15rem;
+
+    font-family: 'Outfit', sans-serif;
+
+    text-align: center;
+
+}
+
+.shriContainer .intro:nth-child(2) {
+
+    margin-top: 2rem;
+
+}
+
+.shriContainer .intro:nth-child(4) {
+
+    margin-top: 2rem;
+
+}
+
+#main-m-h1 {
+
+    font-family: 'Outfit', sans-serif;
+
+}
+
+.shriContainer .photo-m {
+
+    height: 20em;
+
+    width: 15rem;
+
+}
+
+.shriContainer .photo-m img {
+
+    box-shadow: 1px 1px 5px 2px rgb(67, 67, 67);
+
+    border-radius: 2em;
+
+    width: inherit;
+
+    height: inherit;
+
+
+    
+}
+
+.shriContainer .photo-m img:hover {
+
+    transform: scale(1.02);
+
+}
+
+.shriContainer .about-m {
+
+    /* border: 2px solid red; */
+
+    margin-top: -1rem;
+
+}
+
+.shriContainer h3 {
+    margin-top: 10px !important;
+    color: white;
+}
+
+.shriContainer p {
+    margin-top: 10px !important;
+    font-size: 0.8em;
+        color: white;
+
+}
+
+/* @media only screen and (max-width: 1100px){
+
+
+
+} */
+
+@media only screen and (max-width: 1000px) {
+
+
+
+    #main-m-h1 {
+
+        word-wrap: normal;
+
+    }
+
+    .shriContainer .containers {
+
+        /* flex-direction: column; */
+
+        flex-wrap: wrap;
+
+        height: auto;
+
+        overflow: scroll;
+
+    }
+
+    .shriContainer .intro {
+
+        margin-top: 7rem;
+
+    }
+
+    .shriContainer .intro,
+    .photo-m img {
+
+        flex-direction: row;
+
+        height: auto;
+
+        width: 12rem;
+
+    }
+
+    .shriContainer .photo-m img {
+
+        border-radius: 50%;
+
+        height: 13rem;
+
+    }
+
+    .shriContainer .intro:nth-child(2) {
+
+        margin-top: 7rem;
+
+    }
+
+    .shriContainer .intro:nth-child(4) {
+
+        margin-top: 7rem;
+
+    }
+
+    .shriContainer .intro:nth-child(1) {
+
+        margin-top: 0rem;
+
+    }
+
+}
+
+@media only screen and (max-width: 300px) {
+
+    #main-m-h1 {
+
+        font-size: large;
+
+    }
+
+}
+
+/* shriyansh css ends here ----------------------------------------------------------- */
+
+/* conference topic section ----------------------------------------------- */
+.conference {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 2em;
+}
+
+.conference .music-genre-container {
+    width: 80%;
+    height: 15vw;
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-between;
+    
+  }
+
+  /* individual genre container */
+  .conference .music-genre-container .genre {
+    height: 100%;
+    width: 32%;
+    overflow:hidden;
+    position: relative;
+    
+  }
+
+   /* image of genre */
+.conference .music-genre-container .genre img {
+    height: 100%;
+    width: 100%;
+  }
+
+  .conference .music-genre-container .genre:hover img{
+    animation: zoom-in 0.8s 1;
+    animation-fill-mode: forwards;
+  }
+
+  /* genre name */
+  .conference .music-genre-container .genre p {
+    color: rgb(255, 255, 255);
+    width: 100%;
+    height: 100%;
+
+    position: absolute;
+    top: 0;
+    right: 0;
+
+    text-align: center;
+
+    font-size: 1.1em;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: linear-gradient( 0deg, rgb(0, 84, 84) -66%, rgba(0, 26, 255, 0.162) );
+  }
+
+  @keyframes zoom-in {
+    from {
+      transform: scale(1, 1);
+    }
+  
+    to{
+      transform: scale(1.4, 1.4);
+    }
+  }
+
+  /* conference ends topic section ------------------------------------------------------------ */
+
+  /* Quote styling ------------------------------------------------------------------------------ */
+
+  .s-quote{
+
+    font-size: 2rem;
+
+    font-family: 'Outfit', sans-serif;
+
+    color: #252B48;
+
+    margin: 3rem;
+    padding: 1em;;
+
+    line-height: 4rem;
+
+}
+
+#s-big{
+
+    font-size: 8rem;
+
+}
+
+.s-quote p span{
+
+    color: rgb(65, 65, 158);
+
+}
+
+.s-author{
+
+    margin-left: 70%;
+
+}
+
+@media only screen and (max-width: 950px){
+
+    .s-author{
+
+        margin-left: 40%;
+
+    }
+
+}
+
+@media only screen and (max-width: 800px){
+
+    .s-author{
+
+        margin-left: 20%;
+
+    }
+
+}
+
+  /* Quote end  styling ------------------------------------------------------------------------------ */
+
+  /* Testimonial styling start here -------------------------------------------------------------- */
+  .Testimon .footer {
+
+    background-color: white;
+
+    color: var(--Blue);
+
+    padding: 0 !important;
+
+    text-align: center;
+
+  }
+
+  .Testimon .testimonial-container {
+
+    display: flex;
+
+    flex-wrap: wrap;
+
+    justify-content: space-between;
+
+    margin-bottom: 20px;
+
+  }
+
+  .Testimon .testimonial {
+
+    flex-basis: calc(25% - 20px);
+
+    padding: 10px;
+
+    margin: 10px;
+
+    border: 2px solid var(--Blue);
+
+    text-align: center;
+
+  }
+
+  .Testimon .testimonial img {
+
+    max-width: 100%;
+
+    height: auto;
+
+    margin-bottom: 10px;
+
+  }
+
+  .Testimon .testimonial p {
+
+    font-style: italic;
+
+    margin: 10px 0;
+
+  }
+
+ 
+
+  /* Responsive Styles */
+
+  @media (max-width: 768px) {
+
+    .Testimon .testimonial {
+
+      flex-basis: 50%;
+
+    }
+
+  }
+
+  /* Testimonial ends here--------------------------------------------------------------- */
+
+  /* Footer styling ------------------------------------------------------------------- */
+
+  .footer {
+
+    margin-top: 1.8em;
+    background-color: var(--Blue);
+
+    color: #fff;
+
+    padding: 40px 0;
+
+    text-align: center;
+
+  }
+
+  .footer h2 {
+
+    margin-bottom: 20px;
+
+    font-size: 24px;
+
+  }
+
+  .promises {
+
+    display: flex;
+
+    justify-content: space-around;
+
+    flex-wrap: wrap;
+
+    margin-bottom: 20px;
+
+  }
+
+  .promise {
+
+    flex: 1;
+
+    padding: 10px;
+
+    margin: 10px;
+
+    border-right: 1px solid #666;
+
+    text-align: center;
+
+  }
+
+  .promise:last-child {
+
+    border-right: none;
+
+  }
+
+  .promise h3 {
+
+    font-size: 18px;
+
+    margin-bottom: 10px;
+
+  }
+
+  .mailer {
+
+    margin-top: 20px;
+
+    text-align: center;
+
+  }
+
+  .mailer p {
+
+    font-size: 16px;
+
+    margin-bottom: 10px;
+
+  }
+
+  .mailer input[type="email"] {
+
+    width: 80%;
+
+    padding: 10px;
+
+  }
+
+  .mailer button {
+
+    padding: 10px 20px;
+
+    background-color: #ff6600;
+
+    color: #fff;
+
+    border: none;
+
+    cursor: pointer;
+
+    font-size: 16px;
+
+    transition: background-color 0.3s ease-in-out;
+
+  }
+
+  .mailer button:hover {
+
+    background-color: #e65900;
+
+  }
+
+
+  /* footer styling --------------------------------------------------- */

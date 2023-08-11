@@ -1,0 +1,125 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit&display=swap');
+
+body{
+    font-family: 'Outfit', sans-serif;
+}
+
+:root {
+    --Blue: #181c32;
+    --LightBlue: #202a58;
+    --Yello: rgb(255, 255, 192);
+}
+
+.tiger .container {
+    box-shadow: 0px 5px 10px 2px var(--Blue) !important;
+    margin-top: 50px !important;
+    width: 80vw;
+}
+
+/* For contact heading */
+.tiger #contact-heading{
+    display: flex;
+    justify-content: center;
+}
+
+/*Contact Box*/
+.tiger #contact-box{
+    display: flex;
+    /* justify-content: center; */
+    /*border: 1px solid black;*/
+    height: 100%;
+    /* box-shadow: 0px 5px 10px 2px var(--Blue); */
+    
+}
+
+
+.tiger .contact{
+    height: 100%;
+    /*border: 1px solid blue;*/
+}
+
+.tiger #contact-form{
+    width: 60%;
+}
+.tiger .my-form{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin: 20% 10%;
+}
+.tiger input{
+    height: 44px;
+}
+.tiger #name-email-box{
+    display: flex;
+    gap: 20%;
+   
+}
+.tiger #sub-comment{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.tiger #btn{
+    background-color: var(--Blue);
+    color: white; border: none;
+    border-radius: 2px;
+}
+
+.tiger #btn:hover{
+    background-color: var(--Blue);
+}
+
+.tiger #contact-us{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 10% 5%;
+    width: 40%;
+    /*background-color: rgb(128, 128, 216);*/
+    background-color: var(--Blue);
+    color: white;
+}
+
+.tiger #contact-details{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.tiger .all-detail{
+    display: flex;
+    gap: 20px;
+}
+
+.tiger iframe {
+    border: none;
+    width: 100%; 
+}
+
+
+@media only screen and (max-width: 1000px) {
+    .tiger #contact-box{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        /*border: 1px solid black;*/
+        height: 100%;
+    }
+    .tiger #contact-form{
+        width: 100%;
+    }
+
+    .tiger #contact-us{
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        padding: 10% 5%;
+        width: 100%;
+        /*background-color: rgb(128, 128, 216);*/
+        background-color: var(--Blue);
+        color: white;
+    }
+  }
+
+
